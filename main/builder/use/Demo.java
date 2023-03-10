@@ -1,6 +1,5 @@
 package builder.use;
 
-import builder.impl.Builder;
 import builder.impl.ComputerBuilder;
 import builder.impl.Director;
 
@@ -10,6 +9,6 @@ public class Demo {
         ComputerBuilder computerBuilder = new ComputerBuilder();
         Director director = new Director();
         director.buildGameComputer(computerBuilder);
-        System.out.println(computerBuilder.getResult());
+        System.out.println(computerBuilder.build());
     }
 }

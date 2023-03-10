@@ -53,7 +53,7 @@ public class ComputerBuilder implements Builder {
         this.ram = ram;
     }
 
-    public Computer getResult(){
+    public Computer build(){
         return new Computer(cooling, motherBoard, cpu, gpu, hdd, ram, psu);
     }
 }
